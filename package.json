@@ -1,0 +1,24 @@
+{
+  "name": "peppa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "compile": "./node_modules/.bin/babel src --out-dir dist",
+    "fast-test": "./node_modules/.bin/mocha --compilers js:babel-core/register",
+    "test": "npm run compile && npm run fast-test"
+  },
+  "author": "guolin",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.2",
+    "babel-eslint": "^7.1.1",
+    "babel-preset-es2015": "^6.18.0",
+    "chai": "^3.5.0",
+    "eslint": "^3.10.2",
+    "knex": "^0.12.6",
+    "mocha": "^3.1.2",
+    "sqlite3": "^3.1.8"
+  }
+}
